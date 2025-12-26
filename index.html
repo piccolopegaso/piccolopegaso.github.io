@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pegaso - 经验丰富的移动游戏开发者 | Vue.js & Cocos2d-x 专家">
+    <meta name="keywords" content="移动游戏开发, Cocos2d-x, Vue.js, 前端开发, Lua">
+    <meta name="author" content="Pegaso">
+    <title>Pegaso | 移动游戏开发者</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Pegaso</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <img src="avatar.png" alt="Pegaso" class="avatar">
+                <div class="avatar-ring"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="greeting">你好，我是</span>
+                <span class="name gradient-text">Pegaso</span>
+            </h1>
+            <p class="hero-subtitle typing-text">经验丰富的移动游戏开发者</p>
+            <div class="hero-meta">
+                <span class="location">📍 Köln, Germany</span>
+                <span class="separator">•</span>
+                <span class="status">🎮 游戏开发 & 前端工程</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="https://github.com/piccolopegaso" target="_blank" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于区域 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    我是一名<strong>经验丰富的移动游戏开发者</strong>，专注于使用 <strong>Unity3D</strong>/ <strong>Cocos2d-x</strong> 和
+                    <strong>Lua</strong>
+                    打造高质量的跨平台游戏。
+                    同时，我也是一名热衷于现代前端技术的工程师，精通 <strong>Vue.js</strong> 生态系统和企业级应用开发。
+                </p>
+                <p class="about-text">
+                    我的技术栈涵盖了从游戏引擎底层到前端 UI 框架，从自动化工具到数据可视化。
+                    我热爱探索新技术，并致力于将创意转化为实际的产品和解决方案。
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">10</div>
+                        <div class="stat-label">开源项目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">114</div>
+                        <div class="stat-label">Star 数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">技术栈</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能区域 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技能栈</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎮</div>
+                    <h3 class="skill-title">游戏开发</h3>
+                    <ul class="skill-list">
+                        <li>Cocos2d-x</li>
+                        <li>Unity3D</li>
+                        <li>Lua 脚本</li>
+                        <li>跨平台游戏</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3 class="skill-title">前端开发</h3>
+                    <ul class="skill-list">
+                        <li>Vue.js</li>
+                        <li>Element Plus</li>
+                        <li>JavaScript/ES6+</li>
+                        <li>响应式设计</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3 class="skill-title">数据可视化</h3>
+                    <ul class="skill-list">
+                        <li>Luckysheet</li>
+                        <li>Univer Sheets</li>
+                        <li>在线表格</li>
+                        <li>数据处理</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3 class="skill-title">自动化工程</h3>
+                    <ul class="skill-list">
+                        <li>RSS 聚合</li>
+                        <li>GitHub Actions</li>
+                        <li>AI 集成</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3 class="skill-title">实用工具</h3>
+                    <ul class="skill-list">
+                        <li>QR 码生成</li>
+                        <li>打印工具</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目区域 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">精选项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">RSS Channel News</h3>
+                        <a href="https://github.com/piccolopegaso/rss_channel_news" target="_blank"
+                            class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        基于 AI 的 RSS 新闻自动化聚合与索引项目，减少 SEO 干扰，输出更干净、更可信的新闻聚合结果。通过 GitHub Actions 自动推送到 Telegram 频道。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">RSS</span>
+                        <span class="tag">Telegram</span>
+                        <span class="tag">自动化</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Univer Sheet Demo</h3>
+                        <a href="https://github.com/piccolopegaso/univer-sheet-demo" target="_blank"
+                            class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        Univer Sheets 在 Vue2 中的演示项目，展示如何集成现代化的在线表格编辑器到 Vue.js 应用中。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Vue2</span>
+                        <span class="tag">Univer</span>
+                        <span class="tag">表格</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Print QR Code Large</h3>
+                        <a href="https://github.com/piccolopegaso/PrintQrcodeLarge" target="_blank"
+                            class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        一个简单实用的二维码工具，用于生成、下载和打印 QR 码。只需提供文本或 URL，即可生成高质量的 QR 码图像。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">QR Code</span>
+                        <span class="tag">工具</span>
+                        <span class="tag">打印</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Cocos2d-x</h3>
+                        <a href="https://github.com/piccolopegaso/cocos2d-x" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        开源跨平台游戏开发框架，被全球数百万开发者使用。支持 C++、Lua 和 JavaScript，可构建 iOS、Android、Windows 等多平台游戏。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">游戏引擎</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">跨平台</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Luckysheet</h3>
+                        <a href="https://github.com/piccolopegaso/Luckysheet" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-desc">
+                        类似 Excel 的在线电子表格，功能强大、配置简单、完全开源。支持公式、图表、数据透视表等丰富功能。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">电子表格</span>
+                        <span class="tag">开源</span>
+                        <span class="tag">在线工具</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    对我的项目感兴趣？想要合作或交流技术？欢迎通过以下方式联系我：
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/piccolopegaso" target="_blank" class="contact-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>@piccolopegaso</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2025 Pegaso.
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/piccolopegaso" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
