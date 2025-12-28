@@ -118,6 +118,37 @@ body {
   width: 100%;
 }
 
+/* 语言切换器 */
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+  border-color: var(--primary);
+  transform: scale(1.1);
+}
+
+.lang-btn.active {
+  opacity: 1;
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+
 /* ==================== Hero 区域 ==================== */
 .hero {
   min-height: 100vh;
@@ -141,8 +172,13 @@ body {
 }
 
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-content {
@@ -183,8 +219,17 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.3; }
-  50% { transform: scale(1.1); opacity: 0.1; }
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.1;
+  }
 }
 
 .hero-title {
@@ -300,8 +345,15 @@ body {
 }
 
 @keyframes scroll {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(12px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
 }
 
 /* ==================== 关于区域 ==================== */
@@ -516,6 +568,26 @@ body {
   font-weight: 500;
 }
 
+/* 专业经验卡片样式 */
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.experience-period {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+
 /* ==================== 联系区域 ==================== */
 .contact {
   padding: 6rem 0;
@@ -575,6 +647,37 @@ body {
   font-size: 0.95rem;
 }
 
+/* 简约邮箱图标 */
+.email-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.email-icon:hover {
+  transform: translateY(-10px) scale(1.1);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.email-icon svg {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.email-icon:hover svg {
+  transform: scale(1.2);
+}
+
+
 /* ==================== 页脚 ==================== */
 .footer {
   padding: 2rem 0;
@@ -616,40 +719,40 @@ body {
     gap: 1rem;
     font-size: 0.9rem;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .greeting {
     font-size: 1.2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .hero-meta {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .separator {
     display: none;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer .container {
     flex-direction: column;
     text-align: center;
@@ -660,24 +763,24 @@ body {
   .container {
     padding: 0 1rem;
   }
-  
+
   .nav-container {
     padding: 1rem;
   }
-  
+
   .nav-menu {
     gap: 0.75rem;
   }
-  
+
   .avatar-container {
     width: 150px;
     height: 150px;
   }
-  
+
   .hero-title {
     font-size: 1.75rem;
   }
-  
+
   .btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
